@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.42857;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul, ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: #0190f3;
+  outline: 0;
+}
+
+input {
+  display: inline-block;
+  background-color: transparent;
+  width: 100%;
+  padding: 6px 0;
+  font-size: 0.875rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: none;
+}
+
+.display {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper-page {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.wrapper-page .layout-login {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+}
+
+.wrapper-page .layout-login .header h1 a {
+  display: block;
+  background: url(../images/logo.png) 0 0 no-repeat;
+  background-size: cover;
+  width: 115px;
+  height: 41px;
+  margin: 0 auto 18px;
+}
+
+.wrapper-page .layout-login .header h2 {
+  display: block;
+  margin-bottom: 18px;
+  color: #333;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wrapper-page .layout-login .body {
+  margin-bottom: 50px;
+}
+
+.wrapper-page .layout-login .body .body-container {
+  position: relative;
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 8px 24px rgba(21, 48, 142, 0.14);
+  box-shadow: 0 8px 24px rgba(21, 48, 142, 0.14);
+  border-radius: 2px;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul li {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul li::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 1px;
+  height: 18px;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul li a {
+  display: block;
+  position: relative;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  color: #6f6f6f;
+  font-size: 0.875em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul li a.active {
+  color: #333;
+  font-weight: bold;
+}
+
+.wrapper-page .layout-login .body .body-container .tabs ul li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 20%;
+  right: 20%;
+  background-color: #333;
+  height: 2px;
+}
+
+.wrapper-page .layout-login .body .body-container .content {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin {
+  padding: 30px 45px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form {
+  position: relative;
+  margin-bottom: 18px;
+  padding: 5px 0;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ecedf0;
+  width: 100%;
+  height: 1px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form i {
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  color: #555;
+  font-size: 1em;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form .select-flag {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 22px;
+  font-size: 87.5%;
+  width: 60px;
+  text-align: right;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form .select-flag .tf {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  padding: 5px 5px 4px;
+  padding-right: 25px;
+  vertical-align: middle;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form .select-flag .tf::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #888;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form .select-flag .select-drow {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  max-height: 300px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .line-form .select-flag .select-drow .select-items {
+  cursor: pointer;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .has-ico {
+  padding-left: 28px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .has-flag {
+  padding-left: 100px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form {
+  text-align: center;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn {
+  display: inline-block;
+  background-color: #0190f3;
+  min-width: 210px;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 500;
+  border: 0 none;
+  border-radius: 5px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn2 {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 20px;
+  font-size: 0.875rem;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .block {
+  display: block !important;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more {
+  position: relative;
+  margin-top: 12px;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .btn-default {
+  background-color: #fff;
+  color: #0190f3;
+  -webkit-box-shadow: inset 0 0 0 1px #0190f3;
+  box-shadow: inset 0 0 0 1px #0190f3;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .btn-rq {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .forget-pass a {
+  color: #333;
+  font-size: 0.813em;
+  cursor: pointer;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .btn2-mess {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  padding: 5px 10px;
+  background-color: #66bcf8;
+  width: 144px;
+  margin-left: 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .btn2-mess::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -10px;
+  margin-left: 4px;
+  height: 0;
+  width: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid #66bcf8;
+}
+
+.wrapper-page .layout-login .body .body-container .content .form-singin .button-form .btn-more .showbt2mess {
+  opacity: 1;
+}
+
+.wrapper-page .layout-login .body .body-container .qr-none {
+  display: none;
+}
+
+.wrapper-page .layout-login .body::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper-page .layout-login .body .action-more {
+  display: block;
+  padding: 20px 15px;
+  color: #888;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.wrapper-page .layout-login .body .action-more a {
+  color: #0190f3;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.wrapper-page .layout-login .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.wrapper-page .layout-login .footer p {
+  display: block;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.wrapper-page .layout-login .footer p a.lang {
+  margin-bottom: 24px;
+  text-align: center;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.wrapper-page .layout-login .footer p a.langBold {
+  font-weight: bold;
+}
+
+.wrapper-page .layout-login .footer .logos {
+  text-align: center;
+  font-size: 0;
+}
+
+.wrapper-page .layout-login .footer .logos li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.wrapper-page .layout-login .footer .logos li i {
+  display: block;
+  background-image: url(../images/logos.png);
+  background-repeat: no-repeat;
+  background-size: 120px 24px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.wrapper-page .layout-login .footer .logos li .logo-zalo {
+  background-position: 0 0;
+}
+
+.wrapper-page .layout-login .footer .logos li .logo-zingmp3 {
+  background-position: -24px 0;
+}
+
+.wrapper-page .layout-login .footer .logos li .logo-zingtv {
+  background-position: -48px 0;
+}
+
+.wrapper-page .layout-login .footer .logos li .logo-zing {
+  background-position: -72px 0;
+}
+
+.wrapper-page .layout-login .footer .logos li .logo-baomoi {
+  background-position: -96px 0;
+}
+/*# sourceMappingURL=style.css.map */
