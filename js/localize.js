@@ -9,7 +9,8 @@ const appLocalize = {
     chLocalize7: "Login without password",
     chLocalize8: "Don't have an account?",
     chLocalize9: "Register now!",
-    chLocalize10: "Use your Zalo account to access ZA's applicationsr"
+    chLocalize10: "Use your Zalo account to access ZA's applicationsr",
+    chLocalize11: "Scan the QR code with Zalo to addfried with me"
   },
   vie: {
     chLocalize1: "Đăng nhập bằng tài khoản Zalo",
@@ -21,7 +22,8 @@ const appLocalize = {
     chLocalize7: "Đăng nhập không dùng mật khẩu!",
     chLocalize8: "Bạn chưa có tài khoản?",
     chLocalize9: "Đăng ký ngay!",
-    chLocalize10: "Dùng tài khoản Zalo để truy cập các ứng dụng của ZA"
+    chLocalize10: "Dùng tài khoản Zalo để truy cập các ứng dụng của ZA",
+    chLocalize11: "Quét mã QR bằng Zalo để kết bạn với tôi"
   }
 }
 let localize = "vie"

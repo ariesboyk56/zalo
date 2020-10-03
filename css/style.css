@@ -359,6 +359,27 @@ input {
   display: none;
 }
 
+.wrapper-page .layout-login .body .body-container .qr-none .qr-code {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.wrapper-page .layout-login .body .body-container .qr-none .qr-code img {
+  display: inline-block;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-page .layout-login .body .body-container .qr-none .text-qr {
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 0 12px;
+  color: #888;
+  font-size: 0.813em;
+  text-align: center;
+}
+
 .wrapper-page .layout-login .body::after {
   content: "";
   clear: both;

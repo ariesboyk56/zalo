@@ -27,6 +27,7 @@ function dOMContentLoaded() {
   const changeLangLocalize8 = document.getElementById('chLocalize8')
   // const changeLangLocalize9 = document.getElementById('chLocalize9')
   const changeLangLocalize10 = document.getElementById('chLocalize10')
+  const changeLangLocalize11 = document.getElementById('chLocalize11')
   const clickLangVie = document.querySelector('.langVie')
   const clickLangEng = document.querySelector('.langEng')
   // set localize lang mặc định
@@ -43,6 +44,7 @@ function dOMContentLoaded() {
     changeLangLocalize8.innerHTML = `${appLocalize[localize].chLocalize8} <a>${appLocalize[localize].chLocalize9}</a>`
     // changeLangLocalize9.innerText = appLocalize[localize].chLocalize9
     changeLangLocalize10.innerText = appLocalize[localize].chLocalize10
+    changeLangLocalize11.innerText = appLocalize[localize].chLocalize11
   }
   setLocalize()
   // chuyển đổi ngôn ngữ
